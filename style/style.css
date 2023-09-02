@@ -10,13 +10,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box; /* Esto asegura que el padding no afecte el ancho total de los elementos */
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 /* Index.html */
 
 #bodyIndex{
     background-color: #DCDCDC;
-    font-family: 'Open Sans', sans-serif;
 }
 .navbar {
     width: 100%;
