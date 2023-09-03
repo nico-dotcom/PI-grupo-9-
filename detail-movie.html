@@ -7,18 +7,21 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Recursive:wght@700&display=swap" rel="stylesheet">
-
-
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Recursive:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <title>Detalles Peliculas</title>
 </head>
-<body class="Detail-Movie-Body">
+
+<body id="Detail-Movie-Body">
     <header>
-        <!-- Formulario -->
+        <!-- Barra de navegacion superior -->
         <nav class="navbar">
+            <!-- Logo de la pagina -->
             <img src="./img/logo.png" alt="Logo" class="navbar-logo">
+            
+            <!-- Lista de navegacion -->
             <ul class="navbar-list">
+                <!-- Elementos de la lista de navegacion -->
                 <li class="nav-item"><a class="nav-item-a" href="./index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-item-a" href="./favorite.html">Favoritos</a></li>
                 <li class="nav-item"><a class="nav-item-a" href="./genres.html">Generos</a></li>
@@ -26,40 +29,59 @@
                 <li class="nav-item"><a class="nav-item-a" href="./detail-movie.html">Detalles Movie</a></li>
                 <li class="nav-item"><a class="nav-item-a" href="./detail-serie.html">Detalles Serie</a></li>
                 <li class="nav-item"><a class="nav-item-a" href="./search-results.html">Search Results</a></li>
-
             </ul>
         </nav>
     </header>
-    
-    <!-- Inicio de la seccion de Peliculas Populares -->
-<section class="Detail-group">
-    <h2 class="Detail-detalles-peliculas">Detalles Peliculas Populares</h2>
-    
-    <!-- Elemento individual -->
-    <div class="Detail-item">
-        <img src="./img/portadapelicula1.jpg" alt="Titulo pelicula 1">
-       <article class="Detail-Movie-Info"> 
-        <p class="Detail-title">El codigo enigma</p>
-        <p class="Detail-item-date">Fecha de Estreno: 01/09/2019<p>
-        <a><i class="fa-regular fa-star Detail-Icon" style="color: #0e0d0d;"></i></a>
-        <a><i class="fa-regular fa-star Detail-Icon" style="color: #080808;"></i></a>
-        <a><i class="fa-regular fa-star Detail-Icon" style="color: #070707;"></i></a>
-        <a><i class="fa-regular fa-star Detail-Icon" style="color: #020202;"></i></a>
-        <a><i class="fa-regular fa-star Detail-Icon" style="color: #040404;"></i></a>
-        <a><i class="fa-regular fa-star Detail-Icon" style="color: #060606;"></i></a>
-        <p class="Detail-Movie-sinopsis">Durante la Segunda Guerra Mundial, el genio inglés Alan Turing intenta descifrar el código alemán enigma con la ayuda de otros matemáticos.</p>
-        <p class="Detail-Movie-genero">‧ Drama/Bélico ‧ 1h 54m</p></article>
-    </div>
 
-    
+    <main>
+        <!-- Seccion principal de detalles de peliculas populares -->
+        <section class="Detail-group">
+            <h2 class="Detail-detalles-peliculas">Detalles Peliculas Populares</h2>
 
+            <!-- Detalle individual de una pelicula -->
+            <div class="Detail-item">
+                <!-- Imagen de la pelicula -->
+                <img src="./img/portadapelicula1.jpg" alt="Titulo pelicula 1">
 
-<!-- Empieza el footer -->
-<footer class="footer">
-    <img src="./img/logo.png" alt="Logo" class="navbar-logo footer-logo">
-    <p>Victoria Elizalde, Bernarda Camauer & Nicolas Russo</p>
-</footer>
-<!-- Termina el footer -->
+                <!-- Informacion detallada de la pelicula -->
+                <article class="Detail-Movie-Info">
+                    <!-- Titulo de la pelicula -->
+                    <p class="Detail-title">El codigo enigma</p>
+
+                    <!-- Puntuación con estrellas -->
+                    <div class="stars-detail">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+
+                    <!-- Fecha de estreno -->
+                    <p class="Detail-item-date">Fecha de Estreno: 01/09/2019<p>
+
+                    <!-- Sinopsis de la pelicula -->
+                    <p class="Detail-Movie-sinopsis">Durante la Segunda Guerra Mundial, el genio inglés Alan Turing intenta descifrar el código alemán enigma con la ayuda de otros matemáticos.</p>
+
+                    <!-- Duracion de la pelicula -->
+                    <p class="Detail-Movie-duration">Duracion: 1:54m</p>
+
+                    <!-- Genero de la pelicula -->
+                    <p class="Detail-Movie-genero">Genero: Drama/Belico</p>
+
+                    <!-- Boton para agregar a favoritos -->
+                    <a class="Detail-Movie-add-favoritos">Agregar a favoritos</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <!-- Pie de pagina -->
+    <footer class="footer">
+        <!-- Logo en el footer -->
+        <img src="./img/logo.png" alt="Logo" class="navbar-logo footer-logo">
+        <p>Victoria Elizalde, Bernarda Camauer & Nicolas Russo</p>
+    </footer>
 
 </body>
 </html>
