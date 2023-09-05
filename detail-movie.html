@@ -11,17 +11,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <title>Detalles Peliculas</title>
 </head>
-
-<body id="Detail-Movie-Body">
+<body class="Detail-Movie-Body">
     <header>
-        <!-- Barra de navegacion superior -->
+        <!-- Formulario -->
         <nav class="navbar">
-            <!-- Logo de la pagina -->
             <img src="./img/logo.png" alt="Logo" class="navbar-logo">
-            
-            <!-- Lista de navegacion -->
             <ul class="navbar-list">
-                <!-- Elementos de la lista de navegacion -->
                 <li class="nav-item"><a class="nav-item-a" href="./index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-item-a" href="./favorite.html">Favoritos</a></li>
                 <li class="nav-item"><a class="nav-item-a" href="./genres.html">Generos</a></li>
@@ -29,52 +24,33 @@
                 <li class="nav-item"><a class="nav-item-a" href="./detail-movie.html">Detalles Movie</a></li>
                 <li class="nav-item"><a class="nav-item-a" href="./detail-serie.html">Detalles Serie</a></li>
                 <li class="nav-item"><a class="nav-item-a" href="./search-results.html">Search Results</a></li>
+
             </ul>
         </nav>
     </header>
+    
+    <!-- Inicio de la seccion de Peliculas Populares -->
+    
+    <h1 class="Detail-detalles-peliculas">Detalles Peliculas Populares</h1>
 
-    <main>
-        <!-- Seccion principal de detalles de peliculas populares -->
-        <section class="Detail-group">
-            <h2 class="Detail-detalles-peliculas">Detalles Peliculas Populares</h2>
-
-            <!-- Detalle individual de una pelicula -->
-            <div class="Detail-item">
-                <!-- Imagen de la pelicula -->
-                <img src="./img/portadapelicula1.jpg" alt="Titulo pelicula 1">
-
-                <!-- Informacion detallada de la pelicula -->
-                <article class="Detail-Movie-Info">
-                    <!-- Titulo de la pelicula -->
-                    <p class="Detail-title">El codigo enigma</p>
-
-                    <!-- Puntuación con estrellas -->
-                    <div class="stars-detail">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star-half-stroke"></i>
-                    </div>
-
-                    <!-- Fecha de estreno -->
-                    <p class="Detail-item-date">Fecha de Estreno: 01/09/2019<p>
-
-                    <!-- Sinopsis de la pelicula -->
-                    <p class="Detail-Movie-sinopsis">Durante la Segunda Guerra Mundial, el genio inglés Alan Turing intenta descifrar el código alemán enigma con la ayuda de otros matemáticos.</p>
-
-                    <!-- Duracion de la pelicula -->
-                    <p class="Detail-Movie-duration">Duracion: 1:54m</p>
-
-                    <!-- Genero de la pelicula -->
-                    <p class="Detail-Movie-genero">Genero: Drama/Belico</p>
-
-                    <!-- Boton para agregar a favoritos -->
-                    <a class="Detail-Movie-add-favoritos">Agregar a favoritos</a>
-                </article>
-            </div>
-        </section>
-    </main>
+<section class="Section-Movie">
+    <article class="Detail-item">
+        <img src="./img/portadapelicula1.jpg" alt="Titulo pelicula 1">
+        <article class="Detail-Movie-Titulo-Icon">
+        <p class="Detail-title">El codigo enigma</p>
+        <a><i class="fa-solid fa-star" style="color: #2C3E50;"></i>
+        <i class="fa-solid fa-star" style="color: #2C3E50;"></i>
+        <i class="fa-solid fa-star" style="color: #2C3E50;"></i>
+        <i class="fa-solid fa-star" style="color: #2C3E50;"></i>
+        <i class="fa-solid fa-star-half-stroke" style="color:  #2C3E50;"></i></a></article>
+        <p class="Detail-item-date">Fecha de Estreno: 01/09/2019<p></p>
+        <p class="Detail-Movie-sinopsis">Durante la Segunda Guerra Mundial, el genio inglés Alan Turing intenta descifrar el código alemán enigma con la ayuda de otros matemáticos.</p>
+        <article class="Detail-Movie-Duracion-genero">
+        <p class="Detail-Movie-genero">‧ Drama/Bélico </p>
+        <p class="Detail-Movie-Duracion">Duracion: 1:54m </p>
+        <botton class="Detail-Movie-Boton"><i class="fa-regular fa-bookmark"></i></botton></article>
+  
+    </section>
 
     <!-- Pie de pagina -->
     <footer class="footer">
