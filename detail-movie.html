@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +12,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <title>Detalles Peliculas</title>
 </head>
+
 <body class="Detail-Movie-Body">
+
     <header>
-        <!-- Formulario -->
+        <!-- Barra de navegacion -->
         <nav class="navbar">
             <img src="./img/logo.png" alt="Logo" class="navbar-logo">
             <ul class="navbar-list">
@@ -24,40 +27,51 @@
                 <li class="nav-item"><a class="nav-item-a" href="./detail-movie.html">Detalles Movie</a></li>
                 <li class="nav-item"><a class="nav-item-a" href="./detail-serie.html">Detalles Serie</a></li>
                 <li class="nav-item"><a class="nav-item-a" href="./search-results.html">Search Results</a></li>
-
             </ul>
         </nav>
     </header>
-    
-    <!-- Inicio de la seccion de Peliculas Populares -->
-    
-    <h1 class="Detail-detalles-peliculas">Detalles Peliculas Populares</h1>
 
-<section class="Section-Movie">
-    <article class="Detail-item">
-        <img src="./img/portadapelicula1.jpg" alt="Titulo pelicula 1">
-        <article class="Detail-Movie-Titulo-Icon">
-        <p class="Detail-title">El codigo enigma</p>
-        <a><i class="fa-solid fa-star" style="color: #2C3E50;"></i>
-        <i class="fa-solid fa-star" style="color: #2C3E50;"></i>
-        <i class="fa-solid fa-star" style="color: #2C3E50;"></i>
-        <i class="fa-solid fa-star" style="color: #2C3E50;"></i>
-        <i class="fa-solid fa-star-half-stroke" style="color:  #2C3E50;"></i></a></article>
-        <p class="Detail-item-date">Fecha de Estreno: 01/09/2019<p></p>
-        <p class="Detail-Movie-sinopsis">Durante la Segunda Guerra Mundial, el genio inglés Alan Turing intenta descifrar el código alemán enigma con la ayuda de otros matemáticos.</p>
-        <article class="Detail-Movie-Duracion-genero">
-        <p class="Detail-Movie-genero">‧ Drama/Bélico </p>
-        <p class="Detail-Movie-Duracion">Duracion: 1:54m </p>
-        <botton class="Detail-Movie-Boton"><i class="fa-regular fa-bookmark"></i></botton></article>
-  
-    </section>
+    <main id="mainDetailPeliculas">
+        <!-- Empieza la caja padre -->
+        <h1 class="Detail-detalles-peliculas">Detalles Peliculas</h1>
+            
+        <section class="Section-Movie">
+            <article class="Detail-Movie-Boton">
+                <a><i class="fa-regular fa-bookmark"></i></a>
+            </article>
+        
+            <article class="Detail-item">
+                <img src="./img/portadapelicula1.jpg" alt="Titulo pelicula 1">
 
-    <!-- Pie de pagina -->
+                <article class="Detail-Movie-Titulo-Icon">
+                    <p class="Detail-title">El codigo enigma</p>
+                    <article class="Estrellas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </article>
+                
+
+                <p class="Detail-item-date">Fecha de Estreno: 01/09/2019</p>
+                <p class="Detail-Movie-sinopsis">Durante la Segunda Guerra Mundial, el genio inglés Alan Turing intenta descifrar el código alemán enigma con la ayuda de otros matemáticos.</p>
+
+                
+                    <p class="Detail-Movie-genero">Genero: Drama/Bélico </p>
+                    <p class="Detail-Movie-Duracion">Duracion: 1:54m </p>
+                
+            </article>
+            </article>
+    </section>
+    </main>
+    
+<!-- Empieza el footer -->
     <footer class="footer">
-        <!-- Logo en el footer -->
         <img src="./img/logo.png" alt="Logo" class="navbar-logo footer-logo">
         <p>Victoria Elizalde, Bernarda Camauer & Nicolas Russo</p>
     </footer>
 
 </body>
+
 </html>

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +10,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Recursive:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <title>Detalles Peliculas</title>
+    <title>Detalles Serie</title>
 </head>
+
 <body class="Detail-Movie-Body">
+
     <header>
-        <!-- Formulario -->
         <nav class="navbar">
             <img src="./img/logo.png" alt="Logo" class="navbar-logo">
             <ul class="navbar-list">
@@ -24,39 +26,49 @@
                 <li class="nav-item"><a class="nav-item-a" href="./detail-movie.html">Detalles Movie</a></li>
                 <li class="nav-item"><a class="nav-item-a" href="./detail-serie.html">Detalles Serie</a></li>
                 <li class="nav-item"><a class="nav-item-a" href="./search-results.html">Search Results</a></li>
-
             </ul>
         </nav>
     </header>
-    
-    <!-- Inicio de la seccion de Peliculas Populares -->
-    
-    <h1 class="Detail-detalles-peliculas">Detalles Series Populares</h1>
 
-<section class="Section-Movie">
-    <article class="Detail-item">
-        <img src="./img/portada5.jpg" alt="Titulo pelicula 1">
-        <article class="Detail-Movie-Titulo-Icon">
-        <p class="Detail-title">El Encargado</p>
-        <a><i class="fa-solid fa-star" style="color: #2C3E50;"></i>
-        <i class="fa-solid fa-star" style="color: #2C3E50;"></i>
-        <i class="fa-solid fa-star" style="color: #2C3E50;"></i>
-        <i class="fa-solid fa-star-half-stroke" style="color:  #2C3E50;"></i></a></article>
-        <p class="Detail-item-date">Fecha de Estreno: 26/10/2022<p></p>
-        <p class="Detail-Movie-sinopsis">Eliseo trabaja como encargado en un importante edificio y, cada vez que los dueños no están, aprovecha para disfrutar de las comodidades de sus apartamentos.</p>
-        <article class="Detail-Movie-Duracion-genero">
-        <p class="Detail-Movie-genero">‧ Comedia </p>
-        <p class="Detail-Movie-Duracion">Duracion: 30m </p>
-        <botton class="Detail-Movie-Boton"><i class="fa-regular fa-bookmark"></i></botton></article>
-  
-    </section>
+    <main id="mainDetailPeliculas">
+        <h1 class="Detail-detalles-peliculas">Detalles Serie</h1>
+            
+        <section class="Section-Serie">
+            <article class="Detail-Movie-Boton">
+                <a><i class="fa-regular fa-bookmark"></i></a>
+            </article>
+        
+            <article class="Detail-item">
+                <img src="./img/portada5.jpg" alt="Titulo pelicula 1">
 
-    <!-- Pie de pagina -->
+                <article class="Detail-Movie-Titulo-Icon">
+                    <p class="Detail-title">El encargado</p>
+                    <article class="Estrellas">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </article>
+                
+
+                <p class="Detail-item-date">Fecha de Estreno: 26/10/2022</p>
+                <p class="Detail-Movie-sinopsis">Eliseo trabaja como encargado en un importante edificio y, cada vez que los dueños no están, aprovecha para disfrutar de las comodidades de sus apartamentos.</p>
+
+                
+                    <p class="Detail-Movie-genero">Genero: Comedia </p>
+                    <p class="Detail-Movie-Duracion">Duracion: 30m </p>
+                
+            </article>
+            </article>
+    </section>
+    </main>
+
     <footer class="footer">
-        <!-- Logo en el footer -->
         <img src="./img/logo.png" alt="Logo" class="navbar-logo footer-logo">
         <p>Victoria Elizalde, Bernarda Camauer & Nicolas Russo</p>
     </footer>
 
 </body>
+
 </html>
