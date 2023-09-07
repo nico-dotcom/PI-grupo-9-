@@ -444,8 +444,32 @@ footer {
     margin-bottom: -500px;
     margin-left: 270px;
 }
-/* ------------------------------Termina el estilo de favoritos------------------------------*/
 
+.fav-item {
+    position: relative;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #E67E22;
+    height:200px;
+}
+
+.fav-item img {
+    width: 281px;
+    display: flex;
+    border-radius: 10px;
+    align-items: flex-start;
+}
+.masfav{
+    position: absolute;
+    top: -10px; 
+    right: -8px;
+}
+
+.iconofav{
+    color: #2C3E50;
+}
+/* ------------------------------Termina el estilo de favoritos------------------------------*/
 /* ------------------------------Empieza el estilo de detail genero------------------------------*/
 
 #bodyDG{
