@@ -14,19 +14,14 @@
     <header>
         <!-- Formulario -->
         <nav class="navbar">
-            <img src="./img/logo.png" alt="Logo" class="navbar-logo">
+            <a href="./index.html"><img src="./img/logo.png" alt="Logo" class="navbar-logo"></a>
             <ul class="navbar-list">
                 <li class="nav-item"><a class="nav-item-a" href="./index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-item-a" href="./favorite.html">Favoritos</a></li>
                 <li class="nav-item"><a class="nav-item-a" href="./genres.html">Generos</a></li>
-                <li class="nav-item"><a class="nav-item-a" href="./detail-genres.html">Detalles Genero</a></li>
-                <li class="nav-item"><a class="nav-item-a" href="./detail-movie.html">Detalles Movie</a></li>
-                <li class="nav-item"><a class="nav-item-a" href="./detail-serie.html">Detalles Serie</a></li>
-                <li class="nav-item"><a class="nav-item-a" href="./search-results.html">Search Results</a></li>
                 <form action="./search-results.html">
                     <input class="search-form-nav" type="text" value="Barbie">
                 </form>
-
             </ul>
         </nav>
     </header>
@@ -36,12 +31,25 @@
         <h2 class="index-titulo-series">Resultados</h2>
         
         <article class="search-item">
-            <a class="hipervinculo-index" href="./detail-serie.html">
+            <a class="hipervinculo-index" href="./detail-movie.html">
+            <img src="./img/portadapelicula2.avif" alt="Titulo Serie 1">
+            <p class="index-item-title">Barbie</p>
+            </a>
+        </article>
+        <article class="search-item">
+            <a class="hipervinculo-index" href="./detail-movie.html">
+            <img src="./img/portadapelicula2.avif" alt="Titulo Serie 1">
+            <p class="index-item-title">Barbie</p>
+            </a>
+        </article>
+        <article class="search-item">
+            <a class="hipervinculo-index" href="./detail-movie.html">
             <img src="./img/portadapelicula2.avif" alt="Titulo Serie 1">
             <p class="index-item-title">Barbie</p>
             </a>
         </article>
 
+        <p class="error">No se encontaron resultados</p>
     </section>
 </main>
 
