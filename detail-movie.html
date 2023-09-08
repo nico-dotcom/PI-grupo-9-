@@ -10,23 +10,18 @@
     <link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Recursive:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
-    <title>Detalles Peliculas</title>
+    <title>Detalles Movie</title>
 </head>
 
 <body class="Detail-Movie-Body">
 
     <header>
-        <!-- Barra de navegacion -->
         <nav class="navbar">
-            <img src="./img/logo.png" alt="Logo" class="navbar-logo">
+            <a href="./index.html"><img src="./img/logo.png" alt="Logo" class="navbar-logo"></a>
             <ul class="navbar-list">
                 <li class="nav-item"><a class="nav-item-a" href="./index.html">Home</a></li>
                 <li class="nav-item"><a class="nav-item-a" href="./favorite.html">Favoritos</a></li>
                 <li class="nav-item"><a class="nav-item-a" href="./genres.html">Generos</a></li>
-                <li class="nav-item"><a class="nav-item-a" href="./detail-genres.html">Detalles Genero</a></li>
-                <li class="nav-item"><a class="nav-item-a" href="./detail-movie.html">Detalles Movie</a></li>
-                <li class="nav-item"><a class="nav-item-a" href="./detail-serie.html">Detalles Serie</a></li>
-                <li class="nav-item"><a class="nav-item-a" href="./search-results.html">Search Results</a></li>
                 <form action="./search-results.html">
                     <input class="search-form-nav" type="text" value="Barbie">
                 </form>
@@ -35,19 +30,21 @@
     </header>
 
     <main id="mainDetailPeliculas">
-        <!-- Empieza la caja padre -->
-        <h1 class="Detail-detalles-peliculas">Detalles Peliculas</h1>
+        <h1 class="Detail-detalles-peliculas">Detalles Movie</h1>
             
-        <section class="Section-Movie">
+        <section class="Section-Serie">
             <article class="Detail-Movie-Boton">
-                <a><i class="fa-regular fa-bookmark"></i></a>
+                <button class="fa-regular fa-bookmark">
+                    
+                </button>
             </article>
+            
         
             <article class="Detail-item">
                 <img src="./img/portadapelicula1.jpg" alt="Titulo pelicula 1">
 
                 <article class="Detail-Movie-Titulo-Icon">
-                    <p class="Detail-title">El codigo enigma</p>
+                    <p class="Detail-title">Codigo enigma</p>
                     <article class="Estrellas">
                         <i class="fa-solid fa-star"></i>
                         <i class="fa-solid fa-star"></i>
@@ -61,7 +58,22 @@
                 <p class="Detail-Movie-sinopsis">Durante la Segunda Guerra Mundial, el genio inglés Alan Turing intenta descifrar el código alemán enigma con la ayuda de otros matemáticos.</p>
 
                 
-                    <p class="Detail-Movie-genero">Genero: Drama/Bélico </p>
+                    <a href="./detail-genres.html" class="subrayado"><p class="Detail-Movie-genero">Genero: Drama/Bélico </p></a>
+                    <p class="Detail-Movie-Duracion">Duracion: 1:54m</p>
+                
+            </article>
+            </article>
+    </section>
+    </main>
+
+    <footer class="footer">
+        <img src="./img/logo.png" alt="Logo" class="navbar-logo footer-logo">
+        <p>Victoria Elizalde, Bernarda Camauer & Nicolas Russo</p>
+    </footer>
+
+</body>
+
+</html>                    <p class="Detail-Movie-genero">Genero: Drama/Bélico </p>
                     <p class="Detail-Movie-Duracion">Duracion: 1:54m </p>
                 
             </article>
