@@ -15,10 +15,6 @@
     font-family: 'Open Sans', sans-serif;
 }
 
-main {
-    flex: 1 0 auto; 
-}
-
 /* ------------------------------Barra de navegacion ------------------------------*/
 .navbar {
     width: 100%;
@@ -40,7 +36,6 @@ main {
 .navbar-list {
     list-style-type: none;
     display: flex;
-    gap: 10px; 
     align-items: center;
 }
 
@@ -49,8 +44,6 @@ main {
     text-align: center;
     padding: 10px 15px;
     text-decoration: none; 
-    /* No lo vimos en clase pero hace el cuando estas con el mouse arriba de la nav el cursor cambie para que puedas apretar */
-    cursor: pointer;
 }
 
 .search-form-nav{
@@ -60,7 +53,6 @@ main {
     border-radius: 10px;
     width: 100px;
     border-color: #2C3E50;
-     
 }
 /* ------------------------------Termina la nav ------------------------------*/
 
@@ -72,9 +64,11 @@ main {
 .index-group {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     margin-left: 25px;
     align-items: flex-start;
+    /* justify-content: space-between; */
+    
+
 }
 
 .index-titulo-series {
@@ -90,6 +84,7 @@ main {
     background-color: #E67E22;
     height:240px;
     width: 18%;
+    margin-left: 1%;
 }
 
 .index-item img {
@@ -114,7 +109,6 @@ main {
 
 .hipervinculo-index{
     text-decoration: none;
-
 }
 
 /* ------------------------------Termina index------------------------------*/
@@ -123,8 +117,6 @@ main {
 footer {
     margin-top: 30px;
     align-items: center;
-    bottom: 0;
-    left: 0;
     width: 100%;
     height: 35px;
     display: flex;
@@ -133,76 +125,14 @@ footer {
     background-color: #2C3E50;
     color: white;
     margin-bottom: 0;
-    flex-shrink: 0;
 }
 
 .footer-logo {
     height:30px; 
 }
+
 /* ------------------------------Termina el Footer------------------------------*/
-/* ------------------------------Inicia adaptacion celular Home (Index.html) ------------------------------*/
 
-@media(max-width:420px){
-        .index-group {
-            justify-content: center;
-            margin-left: 10px;
-        }
-    
-        .index-item, search-item {
-            width: 80%; 
-            margin: 10px auto;
-            height: 250px;
-        }
-    
-        .index-item img {
-            width: 80%;
-            margin-top: 20px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-}
-/* ------------------------------Termina adaptacion celular Home (Index.html) ------------------------------*/
-
-/* ------------------------------Inicia adaptacion celular Nav y footer------------------------------*/
-
-@media(max-width: 420px) {
-
-    /* Ajustes para la barra de navegación */
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        padding: 10px 0;
-    }
-
-    .navbar-logo {
-        margin: 0;
-        margin-bottom: 10px;
-    }
-
-    .navbar-list {
-        flex-direction: column;
-        gap: 5px;
-    }
-
-    .nav-item-a {
-        padding: 8px 12px;
-        font-size: 14px;
-    }
-
-    footer {
-        flex-direction: column;
-        align-items: center;
-        gap: 5px;
-        height: auto;
-        padding: 10px 0;
-    }
-
-    .footer-logo {
-        margin-bottom: 10px;
-    }
-}
-/* ------------------------------Termina adaptacion celular Nav y footer------------------------------*/
 
 /* ------------------------------Inicia detail movie------------------------------*/
 
@@ -211,7 +141,7 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    height: 100%;
 }
 .subrayado{
     text-decoration: none;
@@ -222,20 +152,15 @@ footer {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    min-height: 100vh;
 }
 
 .Detail-detalles-peliculas{
     color: black;
     font-size: 30px;
-
+    margin-top: 1%;
+    margin-bottom: 1%;
 } 
 
-.Detail-Movie-Boton{
-    position: absolute;
-    top: -10px; 
-    right: -12px;
-}
 
 .Estrellas{
     color: #2C3E50;
@@ -246,7 +171,6 @@ footer {
     background-color: #E67E22;
     width: 700px;
     height: 620px;
-    position: relative;
 }
 
 .Section-Serie{
@@ -254,8 +178,6 @@ footer {
     background-color: #E67E22;
     width: 700px;
     height: 640px;
-    position: relative;
-
 }
 
 .Detail-item img{
@@ -263,8 +185,6 @@ footer {
     display: flex;
     border-radius: 10px;
     align-items: flex-start;
-
-
 }
 
 .Detail-Movie-Titulo-Icon{
@@ -318,9 +238,230 @@ footer {
     }
 /* ------------------------------Termina detail movie------------------------------*/
 
+
+/* ------------------------------Empieza el estilo de genero------------------------------*/
+#bodyGenres{
+    background-color: #DCDCDC;
+    display: flex;
+    flex-direction: column;
+}
+
+.genres-sub{
+    font-size: 20px;
+    width: 100%;
+}
+
+.Genres-titulo-principal {
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 100%;
+}
+
+.Genresection{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25px;
+    margin-top: 30px;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.genresList {
+    font-size: 15px;
+    list-style: none;    
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.genreA{
+    color: white;
+    text-decoration: none; 
+}
+
+.genre-div {
+    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #E67E22;
+    height:100%;
+    padding: 10px 15px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+/* ------------------------------Termina el estilo de genero------------------------------*/
+
+/* ------------------------------Empieza el estilo de favoritos------------------------------*/
+
+#favoriteBody{
+    background-color: #DCDCDC;
+    display: flex;
+    flex-direction: column;
+    }
+
+.tituFav{
+    margin-top: 25px;
+    margin-left: 5px;
+    width: 100%;
+}
+
+.favSection{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25px;
+    align-items: flex-start;
+
+}
+
+.fa-solid{
+    height: 100%;
+    width: 100%;
+}
+
+
+.fav-item {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 20px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #E67E22;
+    height:220px;
+}
+
+.fav-item img {
+    width: 281px;
+    display: flex;
+    border-radius: 10px;
+    align-items: flex-start;
+}
+
+.iconofav{
+    color: #2C3E50;
+    align-items: flex-start;
+}
+
+/* ------------------------------Termina el estilo de favoritos------------------------------*/
+/* ------------------------------Empieza el estilo de detail genero------------------------------*/
+
+#bodyDG{
+    background-color: #DCDCDC;   
+}
+
+.DGsection{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 25px;
+    align-items: flex-start;
+}
+
+.titDG{
+    margin-top: 25px;
+    margin-left: 5px;
+    width: 100%;
+}
+
+.detail-genre-div {
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #E67E22;
+    height:210px;
+    margin-left: 1%;
+}
+
+.detail-genre-div img {
+    width: 281px;
+    display: flex;
+    border-radius: 10px;
+    align-items: flex-start;
+}
+/* ------------------------------Termina el estilo de detail genero------------------------------*/
+/* -----------------Inicio estilo search-results------------------ */
+.search-item {
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 10px 10px 10px 10px;
+    background-color: #E67E22;
+    height:200px;
+    margin-left: 1%;
+}
+
+.error{
+    display: none;
+}
+
+.search-item img {
+    width: 281px;
+    display: flex;
+    border-radius: 10px;
+    align-items: flex-start;
+}
+
+#search-main{
+    background-color: #DCDCDC;   
+    display: flex;
+    flex-direction: column;
+}
+
+/* ADAPTACION CELULAR */
+/* ------------------------------Inicia adaptacion celular Home (Index.html) ------------------------------*/
+
+@media(max-width:420px){
+    .index-group {
+        justify-content: center;
+        margin-left: 10px;
+    }
+
+    .index-item, search-item {
+        width: 80%; 
+        margin: 10px auto;
+        height: 250px;
+    }
+
+    .index-item img {
+        width: 80%;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+/* ------------------------------Termina adaptacion celular Home (Index.html) ------------------------------*/
+
+/* ------------------------------Inicia adaptacion celular Nav y footer------------------------------*/
+
+/* Ajustes para la barra de navegación */
+.navbar {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px 0;
+}
+
+.navbar-logo {
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.navbar-list {
+    flex-direction: column;
+}
+
+.nav-item-a {
+    padding: 8px 12px;
+    font-size: 14px;
+}
+
+footer {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px 0;
+}
+
+.footer-logo {
+    margin-bottom: 10px;
+}
 /* ------------------------------Inicia adaptacion celular Detail movie & serie------------------------------*/
 
-@media(max-width: 420px){
+
     #mainDetailPeliculas {
         margin-top: -80px;
     }
@@ -342,8 +483,6 @@ footer {
 
 .Detail-title{
     font-size: 19px;
-    width: 50%;
-
 }
 
 .Detail-item-date{
@@ -355,184 +494,6 @@ footer {
 }
 /* -------------------- */
 
-    
 }
 /* ------------------------------Termina adaptacion celular Detail movie & serie------------------------------*/
-/* ------------------------------Empieza el estilo de genero------------------------------*/
-#bodyGenres{
-    background-color: #DCDCDC;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-#mainGenres {
-    flex: 1;
-}
-
-.genres-sub{
-    font-size: 20px;
-    width: 100%;
-}
-
-.Genres-titulo-principal {
-    margin-top: 25px;
-    margin-left: 25px;
-    width: 100%;
-}
-
-.Genresection{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-left: 25px;
-    margin-top: 30px;
-    align-items: flex-start;
-    width: 100%;
-}
-
-.genresList {
-    font-size: 15px;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px; 
-}
-
-.genreA{
-    color: white;
-    text-decoration: none; 
-}
-
-.genre-div {
-    text-align: center;
-    border-radius: 10px 10px 10px 10px;
-    background-color: #E67E22;
-    height:100%;
-    padding: 10px 15px;
-    cursor: pointer;
-}
-/* ------------------------------Termina el estilo de genero------------------------------*/
-
-/* ------------------------------Empieza el estilo de favoritos------------------------------*/
-
-#favoriteBody{
-    background-color: #DCDCDC;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;}
-
-#mainFav{
-        flex: 1;
-    }
-
-.tituFav{
-    margin-top: 25px;
-    margin-left: 5px;
-    width: 100%;
-}
-
-.favSection{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-left: 25px;
-    align-items: flex-start;
-}
-
-.fa-solid fa-circle-plus{
-    height: 100%;
-    width: 100%;
-}
-
-.fa-circle-plus{
-    margin-bottom: -500px;
-    margin-left: 270px;
-}
-
-.fav-item {
-    position: relative;
-    text-align: center;
-    margin-top: 10px;
-    border-radius: 10px 10px 10px 10px;
-    background-color: #E67E22;
-    height:200px;
-}
-
-.fav-item img {
-    width: 281px;
-    display: flex;
-    border-radius: 10px;
-    align-items: flex-start;
-}
-.masfav{
-    position: absolute;
-    top: -10px; 
-    right: -8px;
-}
-
-.iconofav{
-    color: #2C3E50;
-}
-/* ------------------------------Termina el estilo de favoritos------------------------------*/
-/* ------------------------------Empieza el estilo de detail genero------------------------------*/
-
-#bodyDG{
-    background-color: #DCDCDC;   
-}
-
-.DGsection{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    margin-left: 25px;
-    align-items: flex-start;
-}
-
-.titDG{
-    margin-top: 25px;
-    margin-left: 5px;
-    width: 100%;
-}
-
-.detail-genre-div {
-    text-align: center;
-    margin-top: 10px;
-    border-radius: 10px 10px 10px 10px;
-    background-color: #E67E22;
-    height:210px;
-}
-
-.detail-genre-div img {
-    width: 281px;
-    display: flex;
-    border-radius: 10px;
-    align-items: flex-start;
-}
-/* ------------------------------Termina el estilo de detail genero------------------------------*/
-/* -----------------Inicio estilo search-results------------------ */
-.search-item {
-    text-align: center;
-    margin-top: 10px;
-    border-radius: 10px 10px 10px 10px;
-    background-color: #E67E22;
-    height:200px;
-}
-
-.error{
-    display: none;
-}
-.search-item img {
-    width: 281px;
-    display: flex;
-    border-radius: 10px;
-    align-items: flex-start;
-}
-
-#search-main{
-    background-color: #DCDCDC;   
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-
-}
+/* ------------------------------Termina adaptacion celular Nav y footer------------------------------*/
