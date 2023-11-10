@@ -1,170 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Andika:wght@400;700&family=Open+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <title>Home</title>
-</head>
-<body id="bodyIndex">
+  </head>
+  <body id="bodyIndex">
     <header>
-        <!-- Formulario -->
-        <nav class="navbar">
-            <a href="./index.html"><img src="./img/logo.png" alt="Logo" class="navbar-logo"></a>
-            <ul class="navbar-list">
-                <li class="nav-item"><a class="nav-item-a" href="./index.html">Home</a></li>
-                <li class="nav-item"><a class="nav-item-a" href="./favorite.html">Favoritos</a></li>
-                <li class="nav-item"><a class="nav-item-a" href="./genres.html">Generos</a></li>
-                <form action="./search-results.html">
-                    <input class="search-form-nav" type="text" value="Barbie">
-                </form>
-            </ul>
-        </nav>
+      <!-- Formulario -->
+      <nav class="navbar">
+        <a href="./index.html"
+          ><img src="./img/logo.png" alt="Logo" class="navbar-logo"
+        /></a>
+        <ul class="navbar-list">
+          <li class="nav-item">
+            <a class="nav-item-a" href="./index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item-a" href="./favorite.html">Favoritos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item-a" href="./genres.html">Generos</a>
+          </li>
+          <form action="./search-results.html">
+            <input class="search-form-nav" type="text" value="Barbie" />
+          </form>
+        </ul>
+      </nav>
     </header>
-<section class="index-group">
 
     <h2 class="index-titulo-series">Series Populares</h2>
-    
-    <article class="index-item" >
-        <a class="hipervinculo-index" href="./detail-serie.html">
-            <img src="./img/portada1.jpg" alt="Titulo Serie 1">
-            <p class="index-item-title">The Morning Show</p>
-            <p class="index-item-date">Fecha de Estreno: 01/09/2019</p>
-        </a>
-    </article>
 
-    <article class="index-item">
-        <a class="hipervinculo-index" href="./detail-serie.html">
-            <img src="./img/portada2.jpeg" alt="Titulo Serie 2">
-            <p class="index-item-title">Heartstopper</p>
-            <p class="index-item-date">Fecha de Estreno: 22/04/2022</p>
-        </a>
-    </article>
+    <section id="seriesP" class="index-group seriesP"></section>
 
-    <article class="index-item">
-        <a class="hipervinculo-index" href="./detail-serie.html">
-            <img src="./img/portada3.webp" alt="Titulo Serie 3">
-            <p class="index-item-title">House of cards</p>
-            <p class="index-item-date">Fecha de Estreno: 01/02/2013</p>
-        </a>
-    </article>
-
-    <article class="index-item">
-        <a class="hipervinculo-index" href="./detail-serie.html">
-            <img src="./img/portada4.jpg" alt="Titulo Serie 4">
-            <p class="index-item-title">Designated Survivor</p>
-            <p class="index-item-date">Fecha de Estreno: 21/08/2016</p>
-        </a>
-    </article>
-
-    <article class="index-item">
-        <a class="hipervinculo-index" href="./detail-serie.html">
-            <img src="./img/portada5.jpg" alt="Titulo Serie 5">
-            <p class="index-item-title">El encargado</p>
-            <p class="index-item-date">Fecha de Estreno: 26/10/2022</p>
-        </a>
-    </article>
-</section>
-
-<section class="index-group">
     <h2 class="index-titulo-series">Peliculas Populares</h2>
+
+    <section id= "PeliculasP" class="index-group"></section>
     
-    <article class="index-item">
-        <a class="hipervinculo-index" href="./detail-movie.html">
-            <img src="./img/portadapelicula1.jpg" alt="Titulo pelicula 1">
-            <p class="index-item-title">El codigo enigma</p>
-            <p class="index-item-date">Fecha de Estreno: 01/09/2019</p>
-        </a>
-    </article>
-
-    <article class="index-item">
-        <a class="hipervinculo-index" href="./detail-movie.html">
-            <img src="./img/portadapelicula2.avif" alt="Titulo pelicula 2">
-            <p class="index-item-title">Barbie</p>
-            <p class="index-item-date">Fecha de Estreno: 20/07/2023</p>
-        </a>
-    </article>
-
-    <article class="index-item">
-        <a class="hipervinculo-index" href="./detail-movie.html">
-            <img src="./img/portadapelicula3.jpg" alt="Titulo pelicula 3">
-            <p class="index-item-title">Oppenheimer</p>
-            <p class="index-item-date">Fecha de Estreno: 20/07/2023</p>
-        </a>
-    </article>
-
-    <article class="index-item">
-        <a class="hipervinculo-index" href="./detail-movie.html">
-            <img src="./img/portadapelicula4.jpg" alt="Titulo pelicula 4">
-            <p class="index-item-title">Nada es lo que parece</p>
-            <p class="index-item-date">Fecha de Estreno: 31/05/2013</p>
-        </a>
-    </article>
-
-    <article class="index-item">
-        <a class="hipervinculo-index" href="./detail-movie.html">
-            <img src="./img/portadapelicula5.jpg" alt="Titulo pelicula 5">
-            <p class="index-item-title">Misterio a bordo</p>
-            <p class="index-item-date">Fecha de Estreno: 14/06/2019</p>
-        </a>
-    </article>
-</section>
-
-<section class="index-group">
     <h2 class="index-titulo-series">Lo mas visto en series</h2>
 
-    <article class="index-item">
-        <a class="hipervinculo-index" href="./detail-serie.html">
-            <img src="./img/portadaserie6.jpeg" alt="Titulo serie 1">
-            <p class="index-item-title">Bridgerton</p>
-            <p class="index-item-date">Fecha de Estreno: 25/12/2020</p>
-        </a>
-    </article>
+    <section id="seriesPP" class="index-group seriesP"> </section>
 
-    <article class="index-item">
-        <a class="hipervinculo-index" href="./detail-serie.html">
-            <img src="./img/portadaserie7.jpeg" alt="Titulo serie 2">
-            <p class="index-item-title">Black Mirror</p>
-            <p class="index-item-date">Fecha de Estreno: 15/07/2023</p>
-        </a>
-    </article>
+    <script src="./js/app.js"></script>
 
-    <article class="index-item">
-        <a class="hipervinculo-index" href="./detail-serie.html">
-            <img src="./img/portadaserie8.jpeg" alt="Titulo serie 3">
-            <p class="index-item-title">The witcher</p>
-            <p class="index-item-date">Fecha de Estreno: 20/12/2019</p>
-        </a>
-    </article>
-
-    <article class="index-item">
-        <a class="hipervinculo-index" href="./detail-serie.html">
-            <img src="./img/portadaserie9.jpg" alt="Titulo serie 4">
-            <p class="index-item-title">The last of us</p>
-            <p class="index-item-date">Fecha de Estreno: 15/01/2023</p>
-        </a>
-    </article>
-
-    <article class="index-item">
-        <a class="hipervinculo-index" href="./detail-serie.html">
-            <img src="./img/portadaserie10.jpg" alt="Titulo serie 5">
-            <p class="index-item-title">Succession</p>
-            <p class="index-item-date">Fecha de Estreno: 3/06/2023</p>
-        </a>
-    </article>
-</section>
-
-
-
-<!-- Empieza el footer -->
+    <!-- Empieza el footer -->
     <footer class="footer">
-        <img src="./img/logo.png" alt="Logo" class="navbar-logo footer-logo">
-        <p>Victoria Elizalde, Bernarda Camauer & Nicolas Russo</p>
+      <img src="./img/logo.png" alt="Logo" class="navbar-logo footer-logo" />
+      <p>Victoria Elizalde, Bernarda Camauer & Nicolas Russo</p>
     </footer>
-<!-- Termina el footer -->
-
-</body>
+    <!-- Termina el footer -->
+  </body>
 </html>
