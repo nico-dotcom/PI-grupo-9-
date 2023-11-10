@@ -1,10 +1,12 @@
-/* Paleta de colores 
+/* Paleta de colores
 --charcoal: #264653ff;
 --persian-green: #2a9d8fff;
 --saffron: #e9c46aff;
 --sandy-brown: #f4a261ff;
---burnt-sienna: #e76f51ff; 
+--burnt-sienna: #e76f51ff;
 */
+
+
 
 
 /* Establezco todo a 0 */
@@ -14,6 +16,7 @@
     box-sizing: border-box; /* Esto asegura que el padding no afecte el ancho total de los elementos */
     font-family: 'Open Sans', sans-serif;
 }
+
 
 /* ------------------------------Barra de navegacion ------------------------------*/
 .navbar {
@@ -25,6 +28,7 @@
     font-size: 15px;
 }
 
+
 .navbar-logo {
     height: 65px;
     display: block;
@@ -33,21 +37,24 @@
     margin-right: 30px;
 }
 
+
 .navbar-list {
     list-style-type: none;
     display: flex;
     align-items: center;
 }
 
+
 .nav-item-a{
     color: white;
     text-align: center;
     padding: 10px 15px;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
+
 .search-form-nav{
-    background-color: #DCDCDC;   
+    background-color: #DCDCDC;  
     text-align: center;
     padding: 10px 15px;
     border-radius: 10px;
@@ -56,10 +63,12 @@
 }
 /* ------------------------------Termina la nav ------------------------------*/
 
+
 /* ------------------------------Empieza index------------------------------*/
 #bodyIndex{
     background-color: #DCDCDC;
 }
+
 
 .index-group {
     display: flex;
@@ -67,15 +76,18 @@
     margin-left: 25px;
     align-items: flex-start;
     /* justify-content: space-between; */
-    
+   
+
 
 }
+
 
 .index-titulo-series {
     margin-top: 25px;
     margin-left: 5px;
     width: 100%;
 }
+
 
 .index-item {
     text-align: center;
@@ -87,6 +99,7 @@
     margin-left: 1%;
 }
 
+
 .index-item img {
     height: 60%;
     width: 100%;
@@ -95,11 +108,16 @@
     align-items: flex-start;
 }
 
+
 .index-item-title {
     margin-top: 10px;
     color: #DCDCDC;
 }
 
+
+.imgdetail{
+    height: 400px;
+}
 .index-item-date {
     display: block;
     margin-top: 5px;
@@ -108,11 +126,14 @@
     color: #2C3E50;
 }
 
+
 .hipervinculo-index{
     text-decoration: none;
 }
 
+
 /* ------------------------------Termina index------------------------------*/
+
 
 /* ------------------------------Empieza Footer------------------------------*/
 footer {
@@ -128,14 +149,19 @@ footer {
     margin-bottom: 0;
 }
 
+
 .footer-logo {
-    height:30px; 
+    height:30px;
 }
+
 
 /* ------------------------------Termina el Footer------------------------------*/
 
 
+
+
 /* ------------------------------Inicia detail movie------------------------------*/
+
 
 #mainDetailPeliculas {
     display: flex;
@@ -155,17 +181,21 @@ footer {
     flex-wrap: wrap;
 }
 
+
 .Detail-detalles-peliculas{
     color: black;
     font-size: 30px;
     margin-top: 1%;
     margin-bottom: 1%;
-} 
+}
+
+
 
 
 .Estrellas{
     color: #2C3E50;
 }
+
 
 .Section-Movie{
     border-radius: 10px 10px 10px 10px;
@@ -174,12 +204,15 @@ footer {
     height: 620px;
 }
 
+
 .Section-Serie{
     border-radius: 10px 10px 10px 10px;
     background-color: #E67E22;
     width: 700px;
-    height: 640px;
+    font-size: 15px;
+    height: 780px;
 }
+
 
 .Detail-item img{
     width: 700px;
@@ -187,6 +220,7 @@ footer {
     border-radius: 10px;
     align-items: flex-start;
 }
+
 
 .Detail-Movie-Titulo-Icon{
     display: flex;
@@ -196,6 +230,7 @@ footer {
     padding: 20px;
 }
 
+
 .Detail-title{
     color: #DCDCDC;
     font-size: 25px;
@@ -204,10 +239,11 @@ footer {
     width: 80%;
 }
 
+
 .fa-star{
     align-items: flex-end;
     justify-content: flex-end;
-    
+   
 }
 .Detail-item-date{
     margin-top: 5px;
@@ -216,14 +252,16 @@ footer {
     font-weight: bold;
   }
 
+
 .Detail-Movie-sinopsis{
     font-size: 17px;
     margin-top: 10px;
     margin-bottom: 20px;
     text-align: justify;
     margin-right: 10px;
-    
+   
 }
+
 
 .Detail-Movie-Boton{
     background-color:#2C3E50;
@@ -240,6 +278,8 @@ footer {
 /* ------------------------------Termina detail movie------------------------------*/
 
 
+
+
 /* ------------------------------Empieza el estilo de genero------------------------------*/
 #bodyGenres{
     background-color: #DCDCDC;
@@ -247,16 +287,19 @@ footer {
     flex-direction: column;
 }
 
+
 .genres-sub{
     font-size: 20px;
     width: 100%;
 }
+
 
 .Genres-titulo-principal {
     margin-top: 25px;
     margin-left: 25px;
     width: 100%;
 }
+
 
 .Genresection{
     display: flex;
@@ -267,6 +310,7 @@ footer {
     width: 100%;
 }
 
+
 .genresList {
     font-size: 15px;
     list-style: none;    
@@ -274,10 +318,12 @@ footer {
     flex-wrap: wrap;
 }
 
+
 .genreA{
     color: white;
-    text-decoration: none; 
+    text-decoration: none;
 }
+
 
 .genre-div {
     text-align: center;
@@ -290,7 +336,9 @@ footer {
 }
 /* ------------------------------Termina el estilo de genero------------------------------*/
 
+
 /* ------------------------------Empieza el estilo de favoritos------------------------------*/
+
 
 #favoriteBody{
     background-color: #DCDCDC;
@@ -298,11 +346,13 @@ footer {
     flex-direction: column;
     }
 
+
 .tituFav{
     margin-top: 25px;
     margin-left: 5px;
     width: 100%;
 }
+
 
 .favSection{
     display: flex;
@@ -310,12 +360,16 @@ footer {
     margin-left: 25px;
     align-items: flex-start;
 
+
 }
+
 
 .fa-solid{
     height: 100%;
     width: 100%;
 }
+
+
 
 
 .fav-item {
@@ -327,6 +381,7 @@ footer {
     height:220px;
 }
 
+
 .fav-item img {
     width: 281px;
     display: flex;
@@ -334,17 +389,21 @@ footer {
     align-items: flex-start;
 }
 
+
 .iconofav{
     color: #2C3E50;
     align-items: flex-start;
 }
 
+
 /* ------------------------------Termina el estilo de favoritos------------------------------*/
 /* ------------------------------Empieza el estilo de detail genero------------------------------*/
 
+
 #bodyDG{
-    background-color: #DCDCDC;   
+    background-color: #DCDCDC;  
 }
+
 
 .DGsection{
     display: flex;
@@ -353,11 +412,13 @@ footer {
     align-items: flex-start;
 }
 
+
 .titDG{
     margin-top: 25px;
     margin-left: 5px;
     width: 100%;
 }
+
 
 .detail-genre-div {
     text-align: center;
@@ -367,6 +428,7 @@ footer {
     height:210px;
     margin-left: 1%;
 }
+
 
 .detail-genre-div img {
     width: 281px;
@@ -385,9 +447,11 @@ footer {
     margin-left: 1%;
 }
 
+
 .error{
     display: none;
 }
+
 
 .search-item img {
     width: 281px;
@@ -396,14 +460,17 @@ footer {
     align-items: flex-start;
 }
 
+
 #search-main{
-    background-color: #DCDCDC;   
+    background-color: #DCDCDC;  
     display: flex;
     flex-direction: column;
 }
 
+
 /* ADAPTACION CELULAR */
 /* ------------------------------Inicia adaptacion celular Home (Index.html) ------------------------------*/
+
 
 @media(max-width:420px){
     .index-group {
@@ -411,11 +478,13 @@ footer {
         margin-left: 10px;
     }
 
+
     .index-item, search-item {
-        width: 80%; 
+        width: 80%;
         margin: 10px auto;
         height: 250px;
     }
+
 
     .index-item img {
         width: 80%;
@@ -424,9 +493,12 @@ footer {
         margin-right: auto;
     }
 
+
 /* ------------------------------Termina adaptacion celular Home (Index.html) ------------------------------*/
 
+
 /* ------------------------------Inicia adaptacion celular Nav y footer------------------------------*/
+
 
 /* Ajustes para la barra de navegación */
 .navbar {
@@ -436,19 +508,23 @@ footer {
     padding: 10px 0;
 }
 
+
 .navbar-logo {
     margin: 0;
     margin-bottom: 10px;
 }
 
+
 .navbar-list {
     flex-direction: column;
 }
+
 
 .nav-item-a {
     padding: 8px 12px;
     font-size: 14px;
 }
+
 
 footer {
     flex-direction: column;
@@ -457,44 +533,57 @@ footer {
     padding: 10px 0;
 }
 
+
 .footer-logo {
     margin-bottom: 10px;
 }
 /* ------------------------------Inicia adaptacion celular Detail movie & serie------------------------------*/
 
 
+
+
     #mainDetailPeliculas {
         margin-top: -80px;
     }
+
 
 .Estrellas{
     margin-top: -10px;
 }
 
+
 .Section-Serie{
     width: 80%;
     height: 60%;
-    
+   
 }
+
 
 .Detail-item img{
     width:100%;
 }
 
 
+
+
 .Detail-title{
     font-size: 19px;
 }
 
+
 .Detail-item-date{
     font-size: 15px;
   }
+
 
 .Detail-Movie-sinopsis{
     font-size: 14px;
 }
 /* -------------------- */
 
+
 }
 /* ------------------------------Termina adaptacion celular Detail movie & serie------------------------------*/
 /* ------------------------------Termina adaptacion celular Nav y footer------------------------------*/
+
+
