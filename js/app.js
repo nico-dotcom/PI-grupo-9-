@@ -12,13 +12,13 @@ fetch(`https://api.themoviedb.org/3/tv/popular?api_key=${apikey}`)
     for (let i = 0; i < 5; i++){
 
         contenido += `<article class="index-item">
-                        <a class="hipervinculo-index" href="./detail-movie.html">
+                        <a class="hipervinculo-index" href="./detail-serie.html">
                         <img src="https://image.tmdb.org/t/p/w500/${series[i].poster_path}" alt="Titulo pelicula 5" />
                         <p class="index-item-title">${series[i].original_name}</p>
                         <p class="index-item-date">Fecha de Estreno: ${series[i].first_air_date}</p>
                         </a>
                     </article>`
-
+        
        
     };
 
