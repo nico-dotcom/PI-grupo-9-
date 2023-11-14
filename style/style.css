@@ -115,9 +115,6 @@
 }
 
 
-.imgdetail{
-    height: 400px;
-}
 .index-item-date {
     display: block;
     margin-top: 5px;
@@ -208,17 +205,21 @@ footer {
 .Section-Serie{
     border-radius: 10px 10px 10px 10px;
     background-color: #E67E22;
-    width: 700px;
-    font-size: 15px;
-    height: 780px;
+    width: 800px;
+    height: 740px;
 }
 
 
 .Detail-item img{
-    width: 700px;
+    width: 800px;
     display: flex;
     border-radius: 10px;
     align-items: flex-start;
+}
+
+
+.imagenmovie{
+    height: 500px;
 }
 
 
@@ -429,6 +430,12 @@ footer {
     margin-left: 1%;
 }
 
+.genresList1{
+    font-size: 15px;
+    list-style: none;    
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .detail-genre-div img {
     width: 281px;
@@ -585,5 +592,6 @@ footer {
 }
 /* ------------------------------Termina adaptacion celular Detail movie & serie------------------------------*/
 /* ------------------------------Termina adaptacion celular Nav y footer------------------------------*/
+
 
 

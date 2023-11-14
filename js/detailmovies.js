@@ -1,4 +1,17 @@
 let apikey = "42737f60c529bfe7e9586db8cb132a1c";
+let titulo = document.querySelector(".Detail-title");
+let sinopsis = document.querySelector(".Detail-Movie-sinopsis");
+let date = document.querySelector(".Detail-item-date");
+let duracion = document.querySelector(".Detail-Movie-Duracion");
+let imagen = document.querySelector(".imagenmovie");
+
+
+
+
+
+
+
+
 
 
 let qs = location.search;
@@ -16,27 +29,17 @@ fetch( `https://api.themoviedb.org/3/movie/${id}?api_key=${apikey}`)
     }).then(function (data) {
 
 
-        let pelicula = data;
-        console.log(pelicula)
+       
+       
+        titulo.innerText = data.title;
+        sinopsis.innerText = data.overview;
+        date.innerText = data.release_date;
+        duracion.innerText = "Minutos de duracion: " + data.runtime;
+        imagen.src = `https://image.tmdb.org/t/p/w500/${data.poster_path}`
 
 
-        let contenido = "";
 
 
-            contenido = ` <img class="imgdetail" src="https://image.tmdb.org/t/p/w500/${pelicula.poster_path}" alt="Titulo pelicula 1">
-            <article class="Detail-Movie-Titulo-Icon">
-                <p class="Detail-title">${pelicula.original_title}</p>
-                <p class="Detail-item-date">Fecha de Estreno: ${pelicula.release_date}</p>
-                <p class="Detail-Movie-sinopsis">${pelicula.overview}</p>
-                <a href="./detail-genres.html" class="subrayado">
-                <p class="Detail-Movie-genero">Genero: ${pelicula.genres[0].name}</p></a>
-                <p class="Detail-Movie-Duracion">Duracion: ${pelicula.runtime}</p>
-                <p>${pelicula.vote_average}/10</p>
-            `  
-
-
-        let indexCard = document.querySelector(".Detail-item");
-        indexCard.innerHTML = contenido;
 
 
 
@@ -45,6 +48,7 @@ fetch( `https://api.themoviedb.org/3/movie/${id}?api_key=${apikey}`)
         console.log(error)
         return error;
     })
+
 
 
 
