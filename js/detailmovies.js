@@ -4,6 +4,8 @@ let sinopsis = document.querySelector(".Detail-Movie-sinopsis");
 let date = document.querySelector(".Detail-item-date");
 let duracion = document.querySelector(".Detail-Movie-Duracion");
 let imagen = document.querySelector(".imagenmovie");
+let calificacion = document.querySelector(".calificaciones");
+
 
 
 
@@ -27,7 +29,7 @@ fetch( `https://api.themoviedb.org/3/movie/${id}?api_key=${apikey}`)
 
 
     }).then(function (data) {
-
+        console.log(data)
 
        
        
@@ -36,6 +38,7 @@ fetch( `https://api.themoviedb.org/3/movie/${id}?api_key=${apikey}`)
         date.innerText = data.release_date;
         duracion.innerText = "Minutos de duracion: " + data.runtime;
         imagen.src = `https://image.tmdb.org/t/p/w500/${data.poster_path}`
+        calificacion.innerText = data.vote_average + "/10";
 
 
 

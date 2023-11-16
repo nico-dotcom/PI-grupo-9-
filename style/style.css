@@ -426,9 +426,14 @@ footer {
     margin-top: 10px;
     border-radius: 10px 10px 10px 10px;
     background-color: #E67E22;
-    height:210px;
+    height:480px;
+    width: 281px;
     margin-left: 1%;
 }
+.detail-genre-div img {
+    height:400px;
+}
+
 
 .genresList1{
     font-size: 15px;
